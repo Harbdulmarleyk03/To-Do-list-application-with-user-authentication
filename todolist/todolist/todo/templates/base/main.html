@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Task List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    </head>
+    <body>
+        <h2>Vizierlist</h2>
+
+        <div class="main-page">
+            <button><a style="text-decoration: none;" href={% url 'task_create' %} class="top-left-link-b">Add task</a></button>
+        
+        
+        
+            
+            {% for task in tasks %}
+                <div class="task">
+                    <h3>{{ task.title }} - {% if task.completed %} {% else %} {% endif %}</h3>
+                    <div class="task-buttons">
+                        <form action="{% url 'task_details' task.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit">View</button>
+                        </form>
+                        <form action="{% url 'task_delete' task.id %}" method="POST" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit">Delete</button>
+                        </form>
+                        <form action="{% url 'task_edit' task.id %}" method="POST" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit">Edit</button>
+                        </form>        
+                    </div>
+                </div>
+                
+            {% endfor %}
+        
+          
+        
+        <br>
+        <br>
+        <button><a style="text-decoration: none;" href={% url 'logout' %} class="bottom-right-link">logout</a></button>
+        
+
+        </div>
+
+        
+    </body>
+</html>

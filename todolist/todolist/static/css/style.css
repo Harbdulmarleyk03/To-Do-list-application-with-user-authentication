@@ -1,0 +1,227 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    margin: auto;
+    padding: 1px;
+}
+
+h2 {
+    color: darkblue;
+    text-align: left;
+    padding: 10px 15px;
+    top: 10px;
+}
+
+a {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.top-right-link {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    top: 20px;
+    right: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.top-left-h1 {
+    position: absolute;
+    left: 10px;
+    margin: 0;
+    font-size: 24;
+    color: blue;
+    padding: 10px;
+    top: 10px;
+}
+
+.login-container {
+    display: grid;
+    background: white;
+    place-items: center;
+    margin: 0px;
+}
+
+.register-page {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.register-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
+}
+
+.register-page {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0px;
+}
+
+.task-create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0px;
+    height: 85vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
+}
+
+.top-left-link {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.top-left-link:hover {
+    background-color: darkblue;
+}
+
+.task-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0px;
+    height: 85vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
+}
+
+.bottom-right-link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left-link-b {
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.task {
+    width: 300px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.task-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.task-buttons button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-buttons button:hover {
+    background-color: darkblue;
+}

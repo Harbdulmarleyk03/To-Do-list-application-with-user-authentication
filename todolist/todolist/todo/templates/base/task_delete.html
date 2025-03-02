@@ -1,0 +1,4 @@
+<form action="{% url 'task_delete' task.id %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+</form>
